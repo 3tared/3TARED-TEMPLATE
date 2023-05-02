@@ -48,6 +48,11 @@ ul {
   cursor: pointer;
   transition-duration: var(--main-transition-duration);
 }
+@media (max-width: 767px) {
+  #icon-up {
+    display: none;
+  }
+}
 /* small devices */
 @media (min-width: 768px) {
   .container {
@@ -285,7 +290,7 @@ ul {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: -100;
   transition-duration: var(--main-transition-duration);
 }
 .header .mega-menu .links-1 li:hover::before {
@@ -898,6 +903,7 @@ ul {
   background-color: var(--main-color);
   height: 30px;
   position: absolute;
+  transition: width 0.7s linear;
 }
 /* End Skills */
 /* Start Work Section */
